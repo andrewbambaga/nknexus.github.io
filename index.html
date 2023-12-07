@@ -34,13 +34,21 @@
         }
 
         ul {
-            list-style-type: none;
             padding: 0;
         }
 
         li {
             margin-bottom: 10px;
             font-size: 1.2em;
+            list-style: none;
+        }
+
+        .bullet::before {
+            content: "\2022"; /* Unicode character for a bullet point */
+            color: #1565c0; /* Bullet point color */
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
         }
 
         .separator {
@@ -61,18 +69,18 @@
     <h1>NK Consulting</h1>
     <h2>Nexus</h2>
 
-    <h1>About</h1>
+    <h1>About Us</h1>
     <p>Welcome to NK Consulting Nexus, your trusted consultancy partner based in Dar es Salaam, Tanzania, which has a range of consultants from different backgrounds ranging from econometrics, project management, M&E, geo-spatial surveying and mapping to Thesis/Dissertation consultations, here to make sure that your projects prosper beyond your initial expectations. You'll never find the best research coaching from undergraduate to post-doctoral assistance. This is Nexus.</p>
 
     <h2>Our Services</h2>
     <ul>
-        <li>Quantitative Data Analysis</li>
-        <li>Qualitative Data Analysis</li>
-        <li>Geographical Information System Mapping (GIS)</li>
-        <li>Proposal Write-Up</li>
-        <li>Thesis/Dissertation Assistant Coach</li>
-        <li>Data Entry and Cleaning</li>
-        <li>Plagiarism Check</li>
+        <li class="bullet">Quantitative Data Analysis</li>
+        <li class="bullet">Qualitative Data Analysis</li>
+        <li class="bullet">Geographical Information System Mapping (GIS)</li>
+        <li class="bullet">Proposal Write-Up</li>
+        <li class="bullet">Thesis/Dissertation Assistant Coach</li>
+        <li class="bullet">Data Entry and Cleaning</li>
+        <li class="bullet">Plagiarism Check</li>
     </ul>
 
     <<h3>Contact us:</h3>
@@ -88,10 +96,8 @@
 
     <div class="separator">&mdash;</div>
 
-    <h4 class="copyright">All Rights Reserved &copy; NK Consulting. 2023</h4>
+    <h4 class="copyright">All Rights Reserved &copy; NK Consulting. 2024</h4>
 
 </body>
 
 </html>
-
-
